@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'bibliotheque_project.urls'
+ROOT_URLCONF = 'bibliotheque.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'bibliotheque_project.wsgi.application'
+WSGI_APPLICATION = 'bibliotheque.wsgi.application'
 
 # Base de données - PostgreSQL via DATABASE_URL
 DATABASES = {
