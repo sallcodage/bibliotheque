@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # Notre application
     'livres',
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -120,6 +121,7 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
+        
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
@@ -130,9 +132,15 @@ REST_FRAMEWORK = {
         'django_filters.rest_framework.DjangoFilterBackend',
         'rest_framework.filters.SearchFilter',
         'rest_framework.filters.OrderingFilter',
+    
     ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
-
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Bibliotheque API',
+    'DESCRIPTION': 'Documentation API',
+    'VERSION': '1.0.0',
+}
 # JWT
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
