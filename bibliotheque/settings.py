@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django_filters',
     'corsheaders',
     # Notre application
-    'api',
+    'livres',
 ]
 
 MIDDLEWARE = [
