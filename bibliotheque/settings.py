@@ -17,11 +17,11 @@ DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'monapp-django.onrender.com',  # ← Remplacez par le nom exact de votre service Render
+    'bibliotheque-1.onrender.com',  # ← Remplacez par le nom exact de votre service Render
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://monapp-django.onrender.com',  # ← Remplacez par le nom exact de votre service Render
+    'https://bibliotheque-1.onrender.com',  # ← Remplacez par le nom exact de votre service Render
 ]
 
 # Application definition
